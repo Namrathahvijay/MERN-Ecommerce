@@ -25,7 +25,7 @@ const ShopContextProvider = (props) => {
 
   useEffect(() => {
     // Load products from backend; fall back to static if request fails
-    const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000'
+    const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4001'
     const load = async () => {
       const isValidObjectId = (id) => /^[a-fA-F0-9]{24}$/.test(String(id))
       const withFakeIds = (arr) => arr.map((p, idx) => ({

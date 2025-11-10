@@ -8,7 +8,7 @@ import orderRouter from "./routes/orderRoute.js";
 
 // INFO: Create express app
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 connectDB();
 
 // INFO: Middleware

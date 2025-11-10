@@ -20,7 +20,7 @@ const PlaceOrder = () => {
   const [country, setCountry] = useState('')
   const [mobile, setMobile] = useState('')
 
-  const baseUrl = useMemo(() => import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000', [])
+  const baseUrl = useMemo(() => import.meta.env.VITE_BACKEND_URL || 'http://localhost:4001', [])
   const token = useMemo(() => localStorage.getItem('token') || '', [])
 
   const isValidObjectId = (id) => /^[a-fA-F0-9]{24}$/.test(String(id))

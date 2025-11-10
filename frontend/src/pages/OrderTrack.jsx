@@ -8,7 +8,7 @@ const OrderTrack = () => {
   const navigate = useNavigate()
   const [order, setOrder] = useState(location.state?.order || null)
   const [loading, setLoading] = useState(!location.state?.order)
-  const baseUrl = useMemo(() => import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000', [])
+  const baseUrl = useMemo(() => import.meta.env.VITE_BACKEND_URL || 'http://localhost:4001', [])
   const token = useMemo(() => localStorage.getItem('token') || '', [])
 
   useEffect(() => {

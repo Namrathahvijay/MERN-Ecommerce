@@ -9,7 +9,7 @@ const Orders = () => {
 
   const baseUrl = useMemo(() => {
     const raw = (import.meta.env.VITE_BACKEND_URL || '').toString().trim()
-    const valid = raw && /^https?:\/\//i.test(raw) ? raw : 'http://localhost:4000'
+    const valid = raw && /^https?:\/\//i.test(raw) ? raw : 'http://localhost:4001'
     return valid.replace(/\/$/, '')
   }, [])
   const token = useMemo(() => localStorage.getItem('token') || '', [])
